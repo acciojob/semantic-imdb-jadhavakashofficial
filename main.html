@@ -3,86 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Movie - Semantic IMDb</title>
+    <title>The Dark Knight - Semantic IMDb</title>
     <style>
         body {
-            font-family: sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
+
         header {
             text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
+            padding: 40px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
+
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
         nav {
-            background-color: #e0e0e0;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        aside {
-            background-color: #f9f9f9;
+            background-color: #333;
             padding: 15px;
-            border: 1px solid #ddd;
-            float: right;
-            width: 200px;
-        }
-        footer {
-            clear: both;
+            border-radius: 5px;
+            margin-bottom: 20px;
             text-align: center;
-            padding: 10px;
-            background-color: #f0f0f0;
+        }
+
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        aside {
+            background-color: #333;
+            padding: 15px;
+            border-left: 4px solid #ffd700;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .poster-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .movie-poster {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>The Shawshank Redemption</h1>
+        <h1>The Dark Knight</h1>
     </header>
 
     <nav>
-        <a href="#actor">Actors</a>
-        <a href="#quote">Quotes</a>
+        <a href="#nav-actor" id="nav-actor">Actors</a>
+        <a href="#nav-quote" id="nav-quote">Quotes</a>
     </nav>
 
-    <section>
+    <div class="poster-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" 
+             alt="The Dark Knight Poster" 
+             class="movie-poster">
+    </div>
+
+    <section id="summary">
         <h2>Summary</h2>
-        <p>The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. It tells the story of banker Andy Dufresne, who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence. Over the years, he forms a friendship with fellow inmate Ellis "Red" Redding, and finds himself becoming a key figure in the prison.</p>
+        <p>Batman, Gotham's protector, faces his greatest challenge when the Joker unleashes chaos on the city. 
+           As the Clown Prince of Crime tests Batman's resolve, District Attorney Harvey Dent's crusade against 
+           organized crime takes a tragic turn, forcing difficult choices about justice, heroism, and sacrifice.</p>
     </section>
 
     <section id="actor">
         <h2>Actors</h2>
-        <ul>
-            <li>Tim Robbins as Andy Dufresne</li>
-            <li>Morgan Freeman as Ellis "Red" Redding</li>
-            <li>Bob Gunton as Warden Norton</li>
-            <li>Clancy Brown as Captain Hadley</li>
-        </ul>
+        <p><strong>Christian Bale</strong> as Bruce Wayne/Batman</p>
+        <p><strong>Heath Ledger</strong> as The Joker (Oscar-winning performance)</p>
+        <p><strong>Aaron Eckhart</strong> as Harvey Dent/Two-Face</p>
+        <p><strong>Michael Caine</strong> as Alfred Pennyworth</p>
+        <p><strong>Gary Oldman</strong> as Commissioner Gordon</p>
     </section>
 
     <section id="quote">
-        <h2>Favorite Quote</h2>
-        <p>"Get busy living, or get busy dying." - Andy Dufresne</p>
+        <h2>Memorable Quote</h2>
+        <blockquote>
+            "Why so serious? Let's put a smile on that face!"
+            <cite>- The Joker</cite>
+        </blockquote>
     </section>
 
     <aside>
-        <h3>IMDb Rating</h3>
-        <p>9.3/10</p>
-        <h3>Release Date</h3>
-        <p>October 14, 1994</p>
+        <h3>IMDb Information</h3>
+        <p><strong>Rating:</strong> ⭐ 9.0/10 (Top 3 on IMDb Top 250)</p>
+        <p><strong>Release Date:</strong> July 18, 2008</p>
     </aside>
 
     <footer>
-        <p>Produced by: Niki Marvin</p>
+        <p>Produced by: Christopher Nolan, Emma Thomas, and Charles Roven</p>
     </footer>
-
 </body>
 </html>
